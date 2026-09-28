@@ -21,7 +21,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/sealvis-workloads/sast-tenant/sast-unicode-check-oci-ta-v04:{{revision}}
+    value: quay.io/sealvis-workloads/sast-tenant/sast-tasks/sast-unicode-check-oci-ta-v04:{{revision}}
   - name: dockerfile
     value: Dockerfile
   - name: path-context

@@ -21,7 +21,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/sealvis-workloads/sast-tenant/sast-gitleaks-check-oci-ta-v01:{{revision}}
+    value: quay.io/sealvis-workloads/sast-tenant/sast-tasks/sast-gitleaks-check-oci-ta-v01:{{revision}}
   - name: dockerfile
     value: Dockerfile
   - name: path-context

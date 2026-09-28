@@ -21,7 +21,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/sealvis-workloads/sast-tenant/sast-coverity-check-v03:{{revision}}
+    value: quay.io/sealvis-workloads/sast-tenant/sast-tasks/sast-coverity-check-v03:{{revision}}
   - name: dockerfile
     value: Dockerfile
   - name: path-context
