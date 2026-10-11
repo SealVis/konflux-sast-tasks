@@ -7,7 +7,7 @@ metadata:
     tekton.dev/pipelines.minVersion: 0.12.1
     tekton.dev/tags: konflux
   labels:
-    app.kubernetes.io/version: 0.1.0
+    app.kubernetes.io/version: 0.1.1
 spec:
   description: |-
     The sast-shell-check task uses [shellcheck](https://www.shellcheck.net/) tool to perform Static Application Security Testing (SAST), a popular cloud-native application security platform. This task leverages the shellcheck wrapper (csmock-plugin-shellcheck-core) to run shellcheck on a directory tree.
@@ -100,6 +100,7 @@ spec:
         limits:
           memory: 4Gi
         requests:
+          cpu: 50m
           memory: 4Gi
     - name: sast-shell-check
       image: quay.io/konflux-ci/konflux-test:v1.5.8@sha256:ce93e7ff1618deda40a66d90289d8fee1bf1ac151c06f1defd33d2a56dbd2b94
